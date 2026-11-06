@@ -5,10 +5,10 @@
 - Leído en Instagram sin sesión: "Ser uno con tu movimiento", beneficios de C1, títulos de destacados, número de seguidores. Bios recortadas.
 
 ## Propuesto por We Rock, sin validar
-- Todos los precios de planes, valoración ($180.000) y TACTO ($110.000 / $140.000).
+- Todos los precios de planes y valoración ($180.000). TACTO queda en $10.000, definido por David.
 - Contenido de cada plan y reglas: sin permanencia, reprogramar con 24 horas.
 - Las cuatro etapas del método: Valorar, Diseñar, Entrenar, Soltar.
-- Nombre TACTO, horarios, 24 cupos, video en cámara lenta, política de lluvia y devolución.
+- Nombre TACTO, horarios, 60 cupos, política de lluvia y devolución.
 - Metas y supuestos: 12 clientes, $15,4 M, costos de TACTO, conversiones de pauta.
 - Texto "lleva el material necesario" y "coordina con tu médico".
 
