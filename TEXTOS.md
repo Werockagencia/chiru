@@ -8,7 +8,7 @@
 - Todos los precios de planes, valoración ($180.000) y TACTO ($110.000 / $140.000).
 - Contenido de cada plan y reglas: sin permanencia, reprogramar con 24 horas.
 - Las cuatro etapas del método: Valorar, Diseñar, Entrenar, Soltar.
-- Nombre TACTO, fecha 21 nov, horarios, 24 cupos, video en cámara lenta, política de lluvia y devolución.
+- Nombre TACTO, horarios, 24 cupos, video en cámara lenta, política de lluvia y devolución.
 - Metas y supuestos: 12 clientes, $15,4 M, costos de TACTO, conversiones de pauta.
 - Texto "lleva el material necesario" y "coordina con tu médico".
 
@@ -18,7 +18,7 @@
 - WhatsApp, correo, zona de residencia, horarios y cupo semanal.
 - Titular de la cuenta de cobro, RUT y comisiones de la pasarela.
 - Política de privacidad y términos del cobro recurrente: revisión legal, incluido el derecho de retracto.
-- Cancha en Medellín y agenda de Da Get Up ese sábado.
+- Cancha en Medellín. La fecha, sábado 21 de noviembre, ya está confirmada por David.
 
 ## Revisar
 - Cita "Para mí, el mejor del mundo lanzando": es de David, confirmar que quiere firmarla.

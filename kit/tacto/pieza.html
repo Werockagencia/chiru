@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<title>TACTO · pieza</title>
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cancha:#0d4a33;--noche:#08291d;--cal:#f6f1e3;--disco:#ff6a1f;--limon:#e9f26b}
+*{box-sizing:border-box;margin:0}
+html,body{width:1080px;overflow:hidden;background:var(--cancha)}
+.p{position:relative;width:1080px;height:1350px;padding:76px 72px;display:none;flex-direction:column;background:var(--cancha);color:var(--cal);font-family:'Instrument Sans',sans-serif;overflow:hidden}
+.p.h{height:1920px;padding:270px 72px 360px}
+.p.on{display:flex}
+.p.noche{background:var(--noche)}
+.p.cal{background:var(--cal);color:var(--noche)}
+svg.v{position:absolute;inset:0;width:100%;height:100%}
+.c{position:relative}
+.tag{font-weight:600;font-size:30px;letter-spacing:.14em;text-transform:uppercase;color:var(--limon)}
+.cal .tag{color:#b1440c}
+.d{font-family:'Big Shoulders Display',Impact,sans-serif;font-weight:900;text-transform:uppercase;line-height:.92}
+.xl{font-size:360px;line-height:.86}
+.l{font-size:150px}
+.m{font-size:84px;font-weight:700;line-height:1}
+.t{font-size:40px;line-height:1.3;font-weight:600}
+.abajo{margin-top:auto}
+.fila{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:26px 0;border-top:3px solid currentColor}
+.fila:last-child{border-bottom:3px solid currentColor}
+.fila b{font:900 118px/1 'Big Shoulders Display',sans-serif;text-transform:uppercase}
+.fila span{font-size:32px;max-width:400px;text-align:right;line-height:1.2}
+.precio{font:900 250px/1 'Big Shoulders Display',sans-serif;color:var(--limon)}
+.boton{display:inline-block;background:var(--disco);color:#1a0d04;font-weight:600;font-size:44px;padding:26px 44px;border-radius:10px}
+</style>
+</head>
+<body>
+
+<!-- 1 · Portada del carrusel -->
+<div class="p" id="p1">
+  <svg class="v" viewBox="0 0 1080 1350"><path d="M-40 1120C300 640 700 560 1120 700" fill="none" stroke="#ff6a1f" stroke-width="9"/><ellipse cx="770" cy="598" rx="80" ry="24" fill="#f6f1e3" transform="rotate(8 770 598)"/></svg>
+  <p class="c tag">Clínica de forehand + juego</p>
+  <h1 class="c d xl" style="margin-top:22px">Tacto</h1>
+  <div class="c abajo">
+    <p class="d m">El forehand no se fuerza.<br>Se siente.</p>
+    <p class="t" style="margin-top:30px">Con Chiru · Medellín · Sábado 21 de noviembre</p>
+  </div>
+</div>
+
+<!-- 2 · Qué se trabaja -->
+<div class="p cal" id="p2">
+  <p class="tag">Lo que vas a trabajar</p>
+  <h2 class="d l" style="margin-top:24px">Cuatro<br>sensaciones</h2>
+  <div class="abajo">
+    <div class="fila"><b>Agarre</b><span>Dónde vive la presión de los dedos</span></div>
+    <div class="fila"><b>Muñeca</b><span>Más giro con menos brazo</span></div>
+    <div class="fila"><b>Ángulo</b><span>La curva a voluntad</span></div>
+    <div class="fila"><b>Presión</b><span>Lanzar bien con marca encima</span></div>
+  </div>
+</div>
+
+<!-- 3 · Oferta -->
+<div class="p noche" id="p3">
+  <p class="tag">Preventa hasta el 13 de noviembre</p>
+  <p class="precio" style="margin-top:60px">$110.000</p>
+  <p class="t" style="margin-top:20px">Después, $140.000</p>
+  <div class="abajo">
+    <p class="d l">24 cupos</p>
+    <p class="t" style="margin-top:22px">Corrección individual con Chiru, juego y tu lanzamiento en cámara lenta.</p>
+    <p class="t" style="margin-top:34px;color:var(--limon)">Reserva en el link del perfil</p>
+  </div>
+</div>
+
+<!-- 4 · Historia de anuncio -->
+<div class="p h" id="p4">
+  <svg class="v" viewBox="0 0 1080 1920"><path d="M-40 1400C320 960 720 860 1120 980" fill="none" stroke="#ff6a1f" stroke-width="9"/><ellipse cx="790" cy="893" rx="80" ry="24" fill="#f6f1e3" transform="rotate(8 790 893)"/></svg>
+  <p class="c tag">Medellín · 21 de noviembre</p>
+  <h1 class="c d xl" style="margin-top:22px">Tacto</h1>
+  <div class="c abajo">
+    <p class="d m">Un día de forehand<br>y juego con Chiru</p>
+    <p class="t" style="margin-top:26px">Solo 24 cupos. Preventa hasta el 13.</p>
+  </div>
+</div>
+
+<!-- 5 · Historia para invitar -->
+<div class="p h noche" id="p5">
+  <p class="tag">Para compartir</p>
+  <h2 class="d l" style="margin-top:30px;line-height:1.08">¿Con quién vas a TACTO?</h2>
+  <p class="t" style="margin-top:34px">Etiqueta a tu compañero de lanzamiento.</p>
+  <div class="abajo">
+    <p class="d m" style="color:var(--limon)">Sábado 21 de noviembre</p>
+    <p class="t" style="margin-top:20px">Medellín · Clínica + juego</p>
+  </div>
+</div>
+
+<script>
+const n=new URLSearchParams(location.search).get('p')||'1';
+document.getElementById('p'+n).classList.add('on');
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chiru · Piezas de TACTO</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="kit.css">
+<style>
+.galeria{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:20px;align-items:start}
+.galeria.dos{grid-template-columns:repeat(2,minmax(0,280px))}
+.galeria figure{margin:0}
+.galeria img{display:block;width:100%;height:auto;border-radius:4px;border:1px solid var(--linea)}
+.galeria a{display:inline-block;margin-top:8px;font-size:.92rem}
+@media (max-width:640px){.galeria,.galeria.dos{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="nav"><div class="wrap"><b><a href="../index.html">Plan maestro</a></b><a href="#carrusel">Carrusel</a><a href="#historias">Historias</a><a href="reels.html">Reels</a><a href="pauta.html">Pauta</a></div></div>
+<header class="portada"><div class="wrap">
+  <p class="eyebrow">TACTO · Sábado 21 de noviembre</p>
+  <h1>Piezas listas para <em>publicar</em></h1>
+  <p>Un carrusel y dos historias, solo con tipografía para no esperar fotos. Cuando lleguen las de Chiru, hacemos una versión con su imagen.</p>
+</div></header>
+<main>
+<section id="carrusel"><div class="wrap">
+  <div class="nota">Publicar solo cuando el link de pago esté activo. Los precios siguen pendientes de validar.</div>
+  <h2>Carrusel</h2>
+  <p class="suave">Formato 4:5, para publicar en colaboración desde @chirulo1 y las cuentas de los clubes.</p>
+  <div class="galeria">
+    <figure><img src="tacto/tacto-carrusel-1.png" alt="Portada: TACTO, el forehand no se fuerza, se siente" width="1080" height="1350"><a href="tacto/tacto-carrusel-1.png" download>Descargar 1</a></figure>
+    <figure><img src="tacto/tacto-carrusel-2.png" alt="Agarre, muñeca, ángulo y presión" width="1080" height="1350"><a href="tacto/tacto-carrusel-2.png" download>Descargar 2</a></figure>
+    <figure><img src="tacto/tacto-carrusel-3.png" alt="Preventa de 110.000 pesos hasta el 13 de noviembre, 24 cupos" width="1080" height="1350"><a href="tacto/tacto-carrusel-3.png" download>Descargar 3</a></figure>
+  </div>
+  <h3>Texto de la publicación</h3>
+  <div class="msg"><pre>El forehand no se fuerza. Se siente.
+
+El sábado 21 de noviembre estoy en Medellín con TACTO: clínica de forehand, corrección individual y juego. Te llevas tu lanzamiento grabado en cámara lenta.
+
+Solo 24 cupos. Preventa hasta el 13 de noviembre.
+Reserva en el link del perfil.
+
+#ultimate #ultimatefrisbee #medellin</pre><button class="copiar">Copiar</button></div>
+</div></section>
+
+<section id="historias"><div class="wrap">
+  <h2>Historias</h2>
+  <p class="suave">Formato 9:16. El espacio libre de abajo es para el sticker de enlace. En la segunda va también el sticker de mención.</p>
+  <div class="galeria dos">
+    <figure><img src="tacto/tacto-historia-1.png" alt="TACTO, un día de forehand y juego con Chiru" width="1080" height="1920"><a href="tacto/tacto-historia-1.png" download>Descargar 1</a></figure>
+    <figure><img src="tacto/tacto-historia-2.png" alt="¿Con quién vas a TACTO?" width="1080" height="1920"><a href="tacto/tacto-historia-2.png" download>Descargar 2</a></figure>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap"><a href="../index.html">Volver al plan maestro</a> · <a href="https://www.werock.space">www.werock.space</a></div></footer>
+<script>
+document.querySelectorAll('.copiar').forEach(b=>b.addEventListener('click',async()=>{
+  const t=b.parentElement.querySelector('pre').textContent;
+  try{await navigator.clipboard.writeText(t);b.textContent='Copiado'}catch{b.textContent='Selecciona el texto y cópialo'}
+  setTimeout(()=>b.textContent='Copiar',2200);
+}));
+</script>
+</body>
+</html>
