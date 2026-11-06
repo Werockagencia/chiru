@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Membresía C1 · Entrenamiento personalizado mensual en Chía y Cajicá</title>
+<meta name="description" content="Planes mensuales de entrenamiento personalizado con Julián Torres, presencial en Chía y Cajicá o remoto. Sin permanencia.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/c1.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="C1 Entrenamiento Consciente, inicio">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14.5" fill="none" stroke="#14231d" stroke-width="1.6"/><path d="M4 21C11 9 21 9 28 13" fill="none" stroke="#c4532c" stroke-width="2.2" stroke-linecap="round"/></svg>
+      C1
+    </a>
+    <button class="menu-btn" aria-expanded="false">Menú</button>
+    <nav aria-label="Principal">
+      <a href="index.html#para-quien">Para quién</a>
+      <a href="index.html#metodo">Método</a>
+      <a href="index.html#julian">Julián</a>
+      <a href="#planes">Planes</a>
+      <a class="btn" href="#inscribirme" data-plan="valoracion">Agendar valoración</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding-bottom:0">
+  <div class="wrap" style="display:block">
+    <p class="eyebrow">Membresía C1</p>
+    <h1>Tu entrenador, <em>cada mes.</em></h1>
+    <p class="lead">Un valor mensual, sin permanencia. Pausas o cancelas cuando quieras, antes de tu siguiente cobro.</p>
+  </div>
+</section>
+
+<section class="hueso" id="planes" style="padding-top:12px">
+  <div class="wrap">
+    <div class="planes">
+      <article class="plan">
+        <span class="etq">Remoto</span><h3>Autonomía</h3>
+        <p class="modo">Entrenas por tu cuenta, con Julián revisando.</p>
+        <p class="precio">$420.000 <small>/ mes</small></p>
+        <ul><li>Plan a tu medida, ajustado cada semana</li><li>Revisión de tus videos</li><li>Una llamada al mes</li></ul>
+        <a class="btn linea" href="#inscribirme" data-plan="autonomia">Elegir Autonomía</a>
+      </article>
+      <article class="plan">
+        <span class="etq">Presencial</span><h3>Consciente</h3>
+        <p class="modo">Dos sesiones por semana en Chía o Cajicá.</p>
+        <p class="precio">$1.280.000 <small>/ mes</small></p>
+        <ul><li>8 sesiones uno a uno al mes</li><li>Plan para los días sin sesión</li><li>Seguimiento por WhatsApp</li></ul>
+        <a class="btn linea" href="#inscribirme" data-plan="consciente">Elegir Consciente</a>
+      </article>
+      <article class="plan destacado">
+        <span class="etq">El más completo</span><h3>Uno</h3>
+        <p class="modo">Tres sesiones por semana en Chía o Cajicá.</p>
+        <p class="precio">$1.780.000 <small>/ mes</small></p>
+        <ul><li>12 sesiones uno a uno al mes</li><li>Plan para los días sin sesión</li><li>Seguimiento por WhatsApp</li><li>Revaloración cada mes</li></ul>
+        <a class="btn" href="#inscribirme" data-plan="uno">Elegir Uno</a>
+      </article>
+      <article class="plan">
+        <span class="etq">Con fecha de competencia</span><h3>Alto rendimiento</h3>
+        <p class="modo">Preparación completa para un objetivo deportivo.</p>
+        <p class="precio"><small>Desde</small> $2.400.000 <small>/ mes</small></p>
+        <ul><li>12 sesiones uno a uno al mes</li><li>Periodización hacia tu competencia</li><li>Coordinación con tu fisio o médico</li></ul>
+        <a class="btn linea" href="#inscribirme" data-plan="rendimiento">Elegir Alto rendimiento</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="inscribirme">
+  <div class="wrap">
+    <p class="eyebrow">Inscripción</p>
+    <h2>Reserva tu cupo</h2>
+    <div class="checkout">
+      <form class="form" id="inscripcion">
+        <div class="campo"><label for="plan">Plan</label>
+          <select id="plan" name="plan">
+            <option value="valoracion">Valoración de movimiento: $180.000</option>
+            <option value="autonomia">Autonomía: $420.000 / mes</option>
+            <option value="consciente">Consciente: $1.280.000 / mes</option>
+            <option value="uno">Uno: $1.780.000 / mes</option>
+            <option value="rendimiento">Alto rendimiento: desde $2.400.000 / mes</option>
+          </select></div>
+        <div class="campo"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" autocomplete="name" required></div>
+        <div class="campo"><label for="correo">Correo</label><input id="correo" name="correo" type="email" autocomplete="email" required></div>
+        <div class="campo"><label for="cel">Celular</label><input id="cel" name="cel" type="tel" autocomplete="tel" required></div>
+        <div class="campo"><label for="zona">¿Dónde entrenarías?</label>
+          <select id="zona" name="zona"><option>Chía</option><option>Cajicá</option><option>Remoto, desde otra ciudad</option></select></div>
+        <div class="campo"><label for="objetivo">¿Qué quieres lograr?</label><textarea id="objetivo" name="objetivo" rows="3"></textarea></div>
+        <label class="check"><input type="checkbox" required> <span>Autorizo el tratamiento de mis datos para gestionar mi entrenamiento, según la política de privacidad.</span></label>
+        <label class="check solo-recurrente"><input type="checkbox" id="acepto-recurrente"> <span>Entiendo que este plan se cobra automáticamente cada mes hasta que lo cancele.</span></label>
+        <button class="btn" id="pagar" type="submit" style="width:100%;margin-top:8px">Continuar al pago</button>
+      </form>
+      <aside class="resumen" aria-live="polite">
+        <h3>Tu elección</h3>
+        <div class="fila"><span>Plan</span><span id="r-plan"></span></div>
+        <div class="fila"><span>Cobro</span><span id="r-tipo"></span></div>
+        <p class="total" id="r-total"></p>
+        <p id="r-nota"></p>
+        <p>El pago se hace en la página segura de la pasarela. Este sitio no guarda datos de tu tarjeta.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="hueso">
+  <div class="wrap">
+    <p class="eyebrow">Preguntas</p>
+    <h2>Antes de empezar</h2>
+    <div class="faq">
+      <details><summary>¿Dónde son las sesiones?</summary><p>En tu casa, tu conjunto o un espacio al aire libre en Chía o Cajicá. Julián lleva el material necesario.</p></details>
+      <details><summary>¿Tengo permanencia?</summary><p>No. Cancelas cuando quieras y no se hace el siguiente cobro.</p></details>
+      <details><summary>¿Qué pasa si no puedo asistir a una sesión?</summary><p>Avisando con 24 horas la reprogramamos dentro del mismo mes.</p></details>
+      <details><summary>¿Sirve si tengo una lesión o dolor?</summary><p>Julián adapta el trabajo a lo que tienes y coordina con tu médico o fisioterapeuta. El entrenamiento no reemplaza un diagnóstico médico.</p></details>
+      <details><summary>¿Por qué empezar con una valoración?</summary><p>Porque el plan depende de cómo te mueves. Si continúas, los $180.000 se abonan a tu primer mes.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>C1 Entrenamiento Consciente · Chía y Cajicá, Cundinamarca</div>
+    <div><a href="https://www.instagram.com/c1__entrenamiento_consciente/">Instagram C1</a> · <a href="https://www.instagram.com/chirulo1/">Julián Torres</a></div>
+    <div class="credito">Sitio desarrollado por <a href="https://www.werock.space">www.werock.space</a></div>
+  </div>
+</footer>
+<script src="js/c1.js"></script>
+</body>
+</html>

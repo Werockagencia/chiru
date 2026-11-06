@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TACTO · Clínica de forehand con Chiru en Medellín</title>
+<meta name="description" content="Un día de ultimate en Medellín: clínica de forehand y juego con Julián Chiru Torres, Selección Colombia. Cupos limitados.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cancha:#0d4a33;--noche:#08291d;--cal:#f6f1e3;--disco:#ff6a1f;--limon:#e9f26b;--suave:#bcd0c3;--nav:68px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav) + 12px)}
+body{font:400 17px/1.55 'Instrument Sans',system-ui,sans-serif;background:var(--noche);color:var(--cal);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Big Shoulders Display',Impact,sans-serif;font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:.005em}
+h1{font-size:clamp(6rem,21vw,17rem);color:var(--cal)}
+h2{font-size:clamp(2.6rem,6vw,4.6rem)}
+h3{font-size:1.8rem;font-weight:700}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+section{padding:clamp(64px,8vw,104px) 0}
+.tag{font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--limon)}
+.lead{font-size:1.2rem;color:var(--suave);max-width:56ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 26px;border-radius:6px;border:2px solid var(--disco);background:var(--disco);color:#1a0d04;font:600 1.03rem 'Instrument Sans',sans-serif;text-decoration:none;cursor:pointer}
+.btn:hover{background:#ff8440;border-color:#ff8440}
+.btn.linea{background:transparent;color:var(--cal);border-color:var(--cal)}
+.btn.linea:hover{background:var(--cal);color:var(--noche)}
+:focus-visible{outline:2px solid var(--limon);outline-offset:3px}
+
+.nav{position:fixed;inset:0 0 auto 0;height:var(--nav);z-index:40;background:rgba(8,41,29,.95);border-bottom:1px solid #1d4a38}
+.nav .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav b{font:900 1.7rem 'Big Shoulders Display',sans-serif;letter-spacing:.04em}
+.nav nav{display:flex;align-items:center;gap:24px}
+.nav nav a:not(.btn){text-decoration:none;font-size:.95rem}
+.nav .btn{min-height:40px;padding:6px 16px;font-size:.92rem}
+
+.hero{padding:calc(var(--nav) + 40px) 0 48px;background:var(--cancha);overflow:hidden}
+.hero .meta{display:flex;flex-wrap:wrap;gap:8px 28px;margin:14px 0 22px;font-weight:600}
+.hero .sub{font:700 clamp(1.7rem,3.6vw,2.7rem)/1.05 'Big Shoulders Display',sans-serif;text-transform:uppercase;margin-top:6px}
+.hero .acciones{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Simulador */
+.sim{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center}
+.sim svg{width:100%;height:auto;background:var(--cancha);border-radius:6px}
+.sim label{display:block;font-weight:600;margin:26px 0 8px}
+.sim input[type=range]{width:100%;accent-color:var(--disco);height:32px}
+.escala{display:flex;justify-content:space-between;font-size:.85rem;color:var(--suave)}
+.lectura{margin-top:16px;min-height:3.2em;color:var(--cal)}
+
+.claves{background:var(--cal);color:var(--noche)}
+.claves .tag{color:#b1440c}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:40px;border-top:3px solid var(--noche)}
+.g4 article{padding:20px 20px 0 0}
+.g4 p{margin-top:8px;color:#35503f;font-size:.98rem}
+
+.dia{list-style:none;padding:0;margin-top:36px}
+.dia li{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:18px 0;border-top:1px solid #1f5240}
+.dia time{font:700 1.5rem 'Big Shoulders Display',sans-serif;color:var(--limon)}
+.dia p{color:var(--suave);font-size:.98rem}
+
+.maestro{background:var(--cancha)}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.foto{aspect-ratio:4/5;background:var(--noche);border-radius:6px;display:flex;align-items:flex-end;padding:20px;font-size:.88rem;color:var(--suave)}
+blockquote{font:700 clamp(1.8rem,3.4vw,2.6rem)/1.05 'Big Shoulders Display',sans-serif;text-transform:uppercase;margin:24px 0 6px;color:var(--limon)}
+cite{font-style:normal;font-size:.92rem;color:var(--suave)}
+
+.precios{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:36px;max-width:760px}
+.precio{border:2px solid #1f5240;border-radius:6px;padding:24px}
+.precio.on{border-color:var(--disco)}
+.precio strong{display:block;font:900 3.2rem 'Big Shoulders Display',sans-serif;margin:6px 0}
+.incluye{margin-top:26px;padding-left:18px;color:var(--suave);max-width:640px}
+
+.form{max-width:640px;margin-top:32px}
+.campo{margin-bottom:16px}
+.campo label{display:block;font-weight:600;font-size:.92rem;margin-bottom:6px}
+.campo input,.campo select{width:100%;min-height:48px;padding:10px 12px;border:1px solid #2d6450;border-radius:6px;background:#0d3a2a;color:var(--cal);font:400 1rem 'Instrument Sans',sans-serif}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.check{display:flex;gap:10px;font-size:.92rem;color:var(--suave);margin:6px 0 16px}
+
+details{border-top:1px solid #1f5240;padding:16px 0;max-width:760px}
+summary{cursor:pointer;font-weight:600}
+details p{margin-top:8px;color:var(--suave)}
+footer{padding:36px 0;background:#051c14;color:var(--suave);font-size:.9rem}
+footer a{color:var(--cal)}
+.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:80;background:var(--cal);color:var(--noche);padding:13px 18px;border-radius:6px;max-width:min(92vw,500px);transition:.25s}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media (max-width:860px){
+  .sim,.dos{grid-template-columns:1fr;gap:32px}
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .nav nav a:not(.btn){display:none}
+  .foto{aspect-ratio:5/4}
+}
+@media (max-width:520px){
+  .g4,.precios,.g2{grid-template-columns:1fr}
+  .dia li{grid-template-columns:1fr;gap:4px}
+  .hero .btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <b>TACTO</b>
+    <nav aria-label="Principal">
+      <a href="#clinica">La clínica</a><a href="#dia">El día</a><a href="#chiru">Chiru</a><a href="#precio">Precio</a>
+      <a class="btn" href="#reserva">Reservar cupo</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <p class="tag">Clínica de forehand + juego · Medellín</p>
+    <h1>Tacto</h1>
+    <p class="sub">El forehand no se fuerza. Se siente.</p>
+    <p class="meta"><span>Sábado 21 de noviembre</span><span>Con Julián Chiru Torres</span><span>24 cupos</span></p>
+    <div class="acciones"><a class="btn" href="#reserva">Reservar mi cupo</a><a class="btn linea" href="#clinica">Qué vas a aprender</a></div>
+  </div>
+</section>
+
+<section id="clinica">
+  <div class="wrap sim">
+    <div>
+      <p class="tag">Un milímetro cambia todo</p>
+      <h2>La diferencia está en la muñeca</h2>
+      <p class="lead" style="margin-top:14px">Mueve el ángulo de salida y mira cómo cambia la línea. Esa es la sensibilidad que vas a entrenar con Chiru.</p>
+      <label for="angulo">Ángulo de salida</label>
+      <input id="angulo" type="range" min="-30" max="30" value="0">
+      <div class="escala"><span>Inside-out</span><span>Plano</span><span>Outside-in</span></div>
+      <p class="lectura" id="lectura" aria-live="polite"></p>
+    </div>
+    <svg viewBox="0 0 520 560" role="img" aria-label="Vista superior de la trayectoria del disco según el ángulo de salida">
+      <g stroke="#2d6450" fill="none"><rect x="30" y="20" width="460" height="520"/><path d="M30 130H490"/></g>
+      <text x="260" y="80" text-anchor="middle" fill="#6fa089" font-family="Big Shoulders Display" font-size="30" font-weight="700">ZONA DE ANOTACIÓN</text>
+      <path id="linea" fill="none" stroke="#ff6a1f" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="260" cy="505" r="9" fill="#e9f26b"/>
+      <ellipse id="disco" rx="15" ry="15" fill="#f6f1e3"/>
+    </svg>
+  </div>
+</section>
+
+<section class="claves">
+  <div class="wrap">
+    <p class="tag">Lo que vas a trabajar</p>
+    <h2>Cuatro sensaciones</h2>
+    <div class="g4">
+      <article><h3>Agarre</h3><p>Dónde vive la presión de los dedos y cómo soltarla.</p></article>
+      <article><h3>Muñeca</h3><p>Más giro con menos fuerza de brazo.</p></article>
+      <article><h3>Ángulo</h3><p>Controlar la curva a voluntad, con viento y sin él.</p></article>
+      <article><h3>Presión</h3><p>Lanzar bien con marca encima y el reloj corriendo.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="dia">
+  <div class="wrap">
+    <p class="tag">El día</p>
+    <h2>De la técnica al juego</h2>
+    <ol class="dia">
+      <li><time>8:00</time><div><h3>Llegada y activación</h3><p>Movilidad de hombro, muñeca y cadera para lanzar mejor.</p></div></li>
+      <li><time>8:30</time><div><h3>Clínica de forehand</h3><p>Trabajo por estaciones y corrección individual con Chiru.</p></div></li>
+      <li><time>11:00</time><div><h3>Pausa e hidratación</h3><p>Cada jugador recibe su lanzamiento grabado en cámara lenta.</p></div></li>
+      <li><time>11:30</time><div><h3>Juego</h3><p>Equipos mezclados. Chiru juega y corrige desde adentro.</p></div></li>
+      <li><time>13:30</time><div><h3>Cierre</h3><p>Foto de grupo y tu tarea para seguir mejorando.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="maestro" id="chiru">
+  <div class="wrap dos">
+    <div class="foto">Foto pendiente: Chiru lanzando un forehand en partido.</div>
+    <div>
+      <p class="tag">Maestro del aire</p>
+      <h2>Julián Chiru Torres</h2>
+      <p class="lead" style="margin-top:14px">Selección Colombia de ultimate, profesional en ciencias del deporte y entrenador de atletas de alto rendimiento. En la comunidad lo conocen por su sensibilidad con el disco.</p>
+      <blockquote>“Para mí, el mejor del mundo lanzando.”</blockquote>
+      <cite>David Higuera, compañero de equipo</cite>
+    </div>
+  </div>
+</section>
+
+<section id="precio">
+  <div class="wrap">
+    <p class="tag">Precio</p>
+    <h2>Un solo día, 24 cupos</h2>
+    <div class="precios">
+      <div class="precio on"><span>Preventa, hasta el 13 de noviembre</span><strong>$110.000</strong></div>
+      <div class="precio"><span>General, desde el 14 de noviembre</span><strong>$140.000</strong></div>
+    </div>
+    <ul class="incluye"><li>Clínica y juego</li><li>Video de tu lanzamiento en cámara lenta</li><li>Hidratación y fruta</li></ul>
+  </div>
+</section>
+
+<section id="reserva" style="background:#0a3324">
+  <div class="wrap">
+    <p class="tag">Reserva</p>
+    <h2>Aparta tu cupo</h2>
+    <p class="lead" style="margin-top:12px">Tu cupo queda confirmado al recibir el pago.</p>
+    <form class="form" id="form">
+      <div class="g2">
+        <div class="campo"><label for="n">Nombre</label><input id="n" autocomplete="name" required></div>
+        <div class="campo"><label for="c">Celular</label><input id="c" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="g2">
+        <div class="campo"><label for="club">Club o equipo</label><input id="club" placeholder="Si no tienes, déjalo vacío"></div>
+        <div class="campo"><label for="nivel">Tu nivel</label><select id="nivel"><option>Empiezo a lanzar</option><option>Juego liga o club</option><option>Compito a nivel nacional</option></select></div>
+      </div>
+      <label class="check"><input type="checkbox" required><span>Autorizo el uso de mis datos para gestionar mi inscripción.</span></label>
+      <button class="btn" type="submit">Continuar al pago</button>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="tag">Preguntas</p>
+    <h2>Antes de ir</h2>
+    <div style="margin-top:24px">
+      <details><summary>¿Necesito experiencia?</summary><p>Basta con saber lanzar un forehand básico. Las estaciones se ajustan a tu nivel.</p></details>
+      <details><summary>¿Qué debo llevar?</summary><p>Ropa de juego, guayos, protector solar, agua y tu disco si tienes uno.</p></details>
+      <details><summary>¿Dónde es?</summary><p>Enviamos la cancha confirmada a todos los inscritos por WhatsApp.</p></details>
+      <details><summary>¿Y si llueve?</summary><p>Se juega. Con tormenta eléctrica movemos la fecha o devolvemos tu dinero.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">TACTO · Medellín, noviembre de 2026 · <a href="https://www.instagram.com/chirulo1/">@chirulo1</a><br>Sitio desarrollado por <a href="https://www.werock.space">www.werock.space</a></div></footer>
+
+<script>
+/* Completar antes de publicar */
+const WHATSAPP = '';   // ej. '573001234567'
+const PAGO = '';       // link de pago de Wompi o Mercado Pago
+
+function toast(m){let t=document.querySelector('.toast');if(!t){t=document.createElement('div');t.className='toast';t.setAttribute('role','status');document.body.append(t)}t.textContent=m;t.classList.add('on');clearTimeout(t.h);t.h=setTimeout(()=>t.classList.remove('on'),4200)}
+
+document.getElementById('form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value;
+  const msg=`Hola, quiero mi cupo en TACTO. Soy ${v('n')}. Club: ${v('club')||'sin club'}. Nivel: ${v('nivel')}.`;
+  if(PAGO) location.href=PAGO;
+  else if(WHATSAPP) window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`,'_blank','noopener');
+  else toast('Demo: aquí abre el pago y llega la confirmación por WhatsApp. No se cobró nada.');
+});
+
+/* Simulador: vista superior, lanzador diestro */
+const rango=document.getElementById('angulo'),linea=document.getElementById('linea'),disco=document.getElementById('disco'),lectura=document.getElementById('lectura');
+const quieto=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function trazar(){
+  const a=+rango.value, k=a/30;
+  const x0=260,y0=505,x3=260+k*30,y3=70;
+  /* Curva aproximada, pendiente de revisión de Chiru */
+  linea.setAttribute('d',`M${x0} ${y0}C${260+k*170} 380 ${260+k*190} 200 ${x3} ${y3}`);
+  lectura.textContent = Math.abs(a)<6 ? 'Plano: línea recta y rápida al compañero.'
+    : a>0 ? `Outside-in, ${a}°: el disco abre y vuelve hacia adentro. Sirve para rodear la marca.`
+    : `Inside-out, ${-a}°: sale hacia el lado contrario. Abre espacios que la defensa no cubre.`;
+}
+rango.addEventListener('input',trazar); trazar();
+if(quieto){const p=linea.getPointAtLength(linea.getTotalLength()*.6);disco.setAttribute('cx',p.x);disco.setAttribute('cy',p.y)}
+else{let t=0;(function v(){t=(t+.006)%1;const p=linea.getPointAtLength(linea.getTotalLength()*t);disco.setAttribute('cx',p.x);disco.setAttribute('cy',p.y);disco.setAttribute('ry',15-8*Math.abs(Math.sin(t*6)));requestAnimationFrame(v)})()}
+</script>
+</body>
+</html>

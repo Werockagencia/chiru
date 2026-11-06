@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chiru · Estrategia We Rock</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap" rel="stylesheet">
+<style>
+:root{--pino:#14231d;--hueso:#f2eee5;--papel:#faf8f3;--linea:#d9d3c5;--arcilla:#c4532c;--texto:#1a2620;--suave:#55635b;--nav:60px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav) + 16px)}
+body{font:400 17px/1.6 'Instrument Sans',system-ui,sans-serif;color:var(--texto);background:var(--papel)}
+h1,h2,h3{font-family:'Newsreader',Georgia,serif;font-weight:400;line-height:1.1;letter-spacing:-.012em}
+h1{font-size:clamp(2.6rem,6vw,4.4rem)}
+h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-bottom:14px}
+h3{font-size:1.35rem;margin:26px 0 8px}
+em{color:var(--arcilla)}
+.wrap{max-width:940px;margin:0 auto;padding:0 22px}
+.nav{position:fixed;inset:0 0 auto 0;height:var(--nav);background:rgba(250,248,243,.96);border-bottom:1px solid var(--linea);z-index:20;overflow-x:auto}
+.nav .wrap{max-width:1100px;height:100%;display:flex;align-items:center;gap:22px;white-space:nowrap;font-size:.92rem}
+.nav a{text-decoration:none}.nav a:hover{color:var(--arcilla)}
+.nav b{font-family:'Newsreader',serif;font-weight:500;font-size:1.15rem}
+header.portada{padding:calc(var(--nav) + 64px) 0 56px;background:var(--pino);color:var(--hueso)}
+header.portada p{color:#c9d2ca;font-size:1.2rem;margin-top:16px;max-width:60ch}
+header.portada em{color:#e8875f}
+.eyebrow{font-size:.76rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#7b8f82;margin-bottom:10px}
+section{padding:60px 0;border-bottom:1px solid var(--linea)}
+p+p{margin-top:12px}
+ul,ol{padding-left:20px}li{margin-bottom:6px}
+.demos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.demos a{display:block;background:var(--hueso);border:1px solid var(--linea);border-radius:6px;padding:18px;text-decoration:none}
+.demos a:hover{border-color:var(--arcilla)}
+.demos b{display:block;font:400 1.25rem 'Newsreader',serif}
+.demos span{font-size:.9rem;color:var(--suave)}
+.alerta{background:#fbeee7;border-left:3px solid var(--arcilla);padding:14px 18px;margin:18px 0;font-size:.98rem}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.96rem}
+th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--linea);vertical-align:top}
+th{font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;padding-right:0}
+.scroll{overflow-x:auto}
+.calc{background:var(--pino);color:var(--hueso);border-radius:6px;padding:26px;margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.calc label{display:block;font-size:.92rem;margin-bottom:14px}
+.calc output{float:right;font-weight:600}
+.calc input{width:100%;accent-color:#e8875f;margin-top:4px}
+.res div{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #3b5247}
+.res strong{font:400 1.5rem 'Newsreader',serif}
+.res small{display:block;color:#c9d2ca;margin-top:12px;font-size:.84rem}
+footer{padding:36px 0;font-size:.88rem;color:var(--suave)}
+footer li{margin-bottom:3px}
+@media (max-width:720px){.demos,.calc{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="nav"><div class="wrap"><b><a href="../index.html">Plan maestro</a></b><a href="#resumen">Resumen</a><a href="#marca">Marca</a><a href="#web">Web</a><a href="#sabana">Sabana</a><a href="#medellin">Medellín</a><a href="#agenda">Agenda</a><a href="#numeros">Números</a><a href="#necesito">Pendientes</a></div></div>
+
+<header class="portada"><div class="wrap">
+  <p class="eyebrow">We Rock · 6 de noviembre de 2026</p>
+  <h1>Del maestro del aire a una <em>agenda llena</em></h1>
+  <p>Estrategia para Julián Torres, Chiru: personalizados de perfil alto en Chía y Cajicá, sitio con membresía y clínica de forehand en Medellín.</p>
+</div></header>
+
+<main>
+<section id="resumen"><div class="wrap">
+  <h2>Lo que proponemos</h2>
+  <p>Son dos negocios y conviene separarlos. <b>C1</b> es la renta mensual: pocos clientes, alto valor, en la Sabana. <b>TACTO</b> es un evento rápido para la comunidad de ultimate, que además da prestigio, contenido y prueba del método.</p>
+  <table>
+    <tr><th>Frente</th><th>Meta</th><th>Motor principal</th></tr>
+    <tr><td><b>Web C1</b></td><td>Valoración y membresía cobradas en línea</td><td>Links de suscripción de Mercado Pago</td></tr>
+    <tr><td><b>Sabana</b></td><td>12 clientes y unos $15,4 M al mes en 90 días</td><td>Referidos de salud, Google local y Meta por zonas</td></tr>
+    <tr><td><b>Medellín</b></td><td>24 cupos el sábado 21 de noviembre</td><td>Capitanes de club y reels de Chiru, con pauta de apoyo</td></tr>
+  </table>
+  <div class="demos">
+    <a href="../sitio/index.html"><b>Sitio C1</b><span>Inicio</span></a>
+    <a href="../sitio/membresia.html"><b>Membresía</b><span>Planes y suscripción</span></a>
+    <a href="../medellin/index.html"><b>TACTO</b><span>Landing Medellín</span></a>
+  </div>
+</div></section>
+
+<section id="marca"><div class="wrap">
+  <h2>Marca: lo primero que hay que resolver</h2>
+  <p>Hoy la cuenta <b>@c1__entrenamiento_consciente</b> tiene 9 seguidores, mientras <b>@chirulo1</b> tiene 1.734. El cliente de perfil alto compra a una persona de confianza, así que el rostro manda.</p>
+  <ul>
+    <li><b>Arquitectura:</b> "C1 Entrenamiento Consciente, por Julián Torres". Se mantiene la marca y se apoya en su nombre.</li>
+    <li><b>Publicar en colaboración:</b> cada reel de C1 sale también en @chirulo1, como ya empezó a hacer en noviembre.</li>
+    <li><b>Promesa:</b> "Ser uno con tu movimiento" se queda. Es lo mejor que ya tiene y lo diferencia del gimnasio.</li>
+    <li><b>Limpiar @chirulo1:</b> sigue a 5.136 cuentas, y eso le resta nivel frente a un cliente exigente. Conviene bajar esa cifra y destacar "Personalizados".</li>
+  </ul>
+  <div class="alerta"><b>Cambiar "Cúrate del dolor".</b> Es una promesa de resultado en salud: la puede rechazar Meta y expone a Julián si un cliente no mejora. En el sitio usamos "moverte mejor" y aclaramos que no reemplaza un diagnóstico médico.</div>
+</div></section>
+
+<section id="web"><div class="wrap">
+  <h2>Frente 1: sitio con suscripción</h2>
+  <p>El HTML ya muestra el recorrido completo. Se entra por una <b>valoración paga de $180.000, abonable</b>: filtra a quien va en serio y evita regalar el tiempo de Julián. Después sigue la membresía mensual sin permanencia.</p>
+  <div class="scroll"><table>
+    <tr><th>Plan</th><th>Incluye</th><th class="n">Mes</th></tr>
+    <tr><td>Autonomía</td><td>Remoto: plan, revisión de videos, una llamada</td><td class="n">$420.000</td></tr>
+    <tr><td>Consciente</td><td>8 sesiones uno a uno al mes</td><td class="n">$1.280.000</td></tr>
+    <tr><td>Uno</td><td>12 sesiones al mes y revaloración mensual</td><td class="n">$1.780.000</td></tr>
+    <tr><td>Alto rendimiento</td><td>12 sesiones al mes y preparación para competencia</td><td class="n">desde $2.400.000</td></tr>
+  </table></div>
+  <p><b>Estos precios son propuesta nuestra.</b> No encontramos tarifas públicas de entrenadores premium en Chía o Cajicá. Lo visible es fisioterapia desde $50.000 a $80.000 por sesión, así que C1 debe vender un proceso mensual y nunca competir por sesión. Hay que validarlos con Julián y con sus clientes actuales.</p>
+  <h3>Cómo cobrar</h3>
+  <ol>
+    <li><b>Ahora: Mercado Pago Suscripciones.</b> Un plan y un botón por membresía, cobro automático y reintentos si falla. Funciona sin programar y se pega igual en WordPress.</li>
+    <li><b>Más adelante, si hace falta: Wompi.</b> Permite guardar tarjeta o Nequi y cobrar en automático, pero exige desarrollo a medida por API.</li>
+    <li><b>Evitar por ahora: WooCommerce Subscriptions.</b> Las reseñas indican que los plugins de Wompi y Mercado Pago no lo soportan bien.</li>
+  </ol>
+  <p>Antes de lanzar hay que hacer un cobro real de prueba con una cuenta a nombre de Julián y revisar comisiones, que no pudimos confirmar para Colombia.</p>
+</div></section>
+
+<section id="sabana"><div class="wrap">
+  <h2>Frente 2: personalizados en Chía y Cajicá</h2>
+  <p>Con 12 clientes basta. No es un problema de alcance sino de confianza, por eso la pauta acompaña y las recomendaciones cierran.</p>
+  <h3>A quién le hablamos</h3>
+  <div class="scroll"><table>
+    <tr><th>Perfil</th><th>Qué quiere</th><th>Mensaje</th></tr>
+    <tr><td><b>Directivo, 40 a 58 años</b></td><td>Espalda sin dolor, energía, cero tiempo perdido</td><td>"Tu entrenador llega a tu casa. Tu agenda manda."</td></tr>
+    <tr><td><b>Deportista amateur</b></td><td>Trail, ciclismo, golf, tenis sin lesiones</td><td>"Entrena con quien prepara a ultramaratonistas."</td></tr>
+    <tr><td><b>Adulto 60+</b></td><td>Fuerza, equilibrio y autonomía</td><td>"Fuerza para seguir siendo independiente."</td></tr>
+    <tr><td><b>Padres de jóvenes deportistas</b></td><td>Rendir sin lesionarse</td><td>"Preparación de alto rendimiento desde temprano."</td></tr>
+  </table></div>
+  <h3>Canales, en orden de prioridad</h3>
+  <ol>
+    <li><b>Clientes y exclientes.</b> Esta semana, Julián escribe uno por uno y pide dos nombres. Es lo más rápido que existe.</li>
+    <li><b>Red de salud.</b> Tres alianzas con fisioterapeutas, ortopedistas o médicos del deporte de Chía. Julián se ofrece como el paso siguiente al alta y comparte un informe de evolución. Sin comisiones por remisión: complica la relación ética con el profesional de salud.</li>
+    <li><b>Google.</b> Perfil de Empresa completo con reseñas reales, más búsqueda en "entrenador personal Chía" y "entrenador personalizado Cajicá". Es poco volumen, pero con intención alta.</li>
+    <li><b>Meta por zonas.</b> Radios cortos sobre los conjuntos y sectores de mayor valor. Meta no permite elegir por ingresos en Colombia, así que filtran la zona, la pieza y la valoración paga. Destino: WhatsApp o la página de valoración.</li>
+    <li><b>Conjuntos y clubes.</b> Una "Mañana de movimiento" gratuita al mes en un conjunto, club o colegio campestre, con la administración. Cupo de 12 y valoraciones al final.</li>
+    <li><b>Contenido.</b> Tres reels por semana. Julián corrigiendo a una persona real, con la pregunta "¿por qué te duele?". Los primeros resultados se publican solo con permiso del cliente.</li>
+  </ol>
+  <h3>Primeras piezas de pauta</h3>
+  <ul>
+    <li><b>"Llevas años entrenando el cuerpo equivocado":</b> Julián frente a cámara, 20 segundos, evaluando un movimiento.</li>
+    <li><b>"El entrenador de los ultramaratonistas ahora está en tu conjunto":</b> foto real y CTA a valoración.</li>
+    <li><b>"Solo 12 cupos en la Sabana":</b> escasez verdadera, porque su agenda tiene un límite.</li>
+  </ul>
+  <div class="alerta"><b>Logística que puede romper el negocio:</b> 22 sesiones a domicilio por semana solo funcionan si se agrupan por zona, por ejemplo Chía en la mañana y Cajicá en la tarde. Hay que confirmar dónde vive Julián y qué horas tiene libres.</div>
+</div></section>
+
+<section id="medellin"><div class="wrap">
+  <h2>Frente 3: TACTO en Medellín</h2>
+  <p>Da Get Up tiene agenda abierta del 13 al 26 de noviembre. El <b>sábado 21</b> es la mejor fecha: deja 15 días de venta y evita el puente del 14 al 16. Medellín tiene comunidad fuerte, con clubes como Revolution y el Torneo Eterna Primavera.</p>
+  <h3>La oferta</h3>
+  <ul>
+    <li><b>Formato:</b> clínica de 8:30 a 11:00 y juego de 11:30 a 13:30. Video individual en cámara lenta incluido.</li>
+    <li><b>Precio:</b> preventa $110.000 hasta el 13 de noviembre, luego $140.000. Máximo 24 cupos para que Chiru corrija a cada persona.</li>
+    <li><b>Idea extra:</b> cerrar esa noche con un set de Da Get Up. Clínica de día, pista de noche. Une tus dos comunidades, siempre que la agenda lo permita.</li>
+  </ul>
+  <h3>Cómo se llena</h3>
+  <ol>
+    <li><b>Capitanes primero.</b> Tú y Chiru escriben a los capitanes y entrenadores de los clubes con un cupo de cortesía a cambio de mover su grupo. Con 4 clubes activos se puede llenar casi todo.</li>
+    <li><b>Tres reels de Chiru.</b> "Tu forehand no necesita más fuerza", un forehand imposible y la invitación directa.</li>
+    <li><b>Pauta de apoyo: $400.000.</b> Medellín y alrededores, interés en ultimate, y retargeting de quien vio los reels. Es una comunidad pequeña: más dinero no compra más jugadores.</li>
+    <li><b>Grupo de WhatsApp de inscritos.</b> Cada uno invita a un compañero de equipo.</li>
+  </ol>
+  <h3>Cuenta del evento</h3>
+  <div class="scroll"><table>
+    <tr><th>Concepto (estimado)</th><th class="n">Valor</th></tr>
+    <tr><td>Ingreso con 24 cupos, promedio $125.000</td><td class="n">$3.000.000</td></tr>
+    <tr><td>Cancha, tiquete de Chiru, hidratación, pauta y comisión</td><td class="n">−$1.600.000</td></tr>
+    <tr><td><b>Queda para repartir</b></td><td class="n"><b>$1.400.000</b></td></tr>
+    <tr><td>Punto de equilibrio</td><td class="n">13 cupos</td></tr>
+  </table></div>
+  <p>Costos por cotizar. No incluye hospedaje. Si el 13 de noviembre no hay al menos 8 cupos pagos, conviene replantear la fecha.</p>
+</div></section>
+
+<section id="agenda"><div class="wrap">
+  <h2>Agenda</h2>
+  <div class="scroll"><table>
+    <tr><th>Cuándo</th><th>C1 Sabana</th><th>TACTO Medellín</th></tr>
+    <tr><td><b>Hoy al 8 nov</b></td><td>Validar precios, recoger fotos, escribir a clientes actuales</td><td>Confirmar fecha, cancha y cuenta de cobro</td></tr>
+    <tr><td><b>9 al 13 nov</b></td><td>Links de pago, Perfil de Google, grabar 6 reels, iniciar Meta</td><td>Landing publicada, capitanes contactados, preventa y pauta</td></tr>
+    <tr><td><b>14 al 21 nov</b></td><td>Primeras valoraciones y visitas a fisioterapeutas</td><td>Precio general, último empujón y evento</td></tr>
+    <tr><td><b>22 nov a dic</b></td><td>Migrar a WordPress y Google Ads, primera Mañana de movimiento</td><td>Publicar el aftermovie y abrir lista para Bogotá o Cali</td></tr>
+    <tr><td><b>Enero y febrero</b></td><td>Enero es el mes de propósitos: máxima pauta y meta de 12 clientes</td><td>Curso de forehand en línea, si TACTO funciona</td></tr>
+  </table></div>
+</div></section>
+
+<section id="numeros"><div class="wrap">
+  <h2>Números para la Sabana</h2>
+  <p>La meta de 90 días: 5 Consciente, 3 Uno, 1 Alto rendimiento y 3 Autonomía. Suma <b>$15,4 M al mes</b> y unas <b>22 sesiones semanales</b>. La calculadora parte de supuestos nuestros. Los reemplazamos con datos reales después de 30 días de pauta.</p>
+  <div class="calc">
+    <div>
+      <label>Pauta mensual <output id="o-p"></output><input id="p" type="range" min="500000" max="4000000" step="100000" value="1800000"></label>
+      <label>Costo por contacto <output id="o-c"></output><input id="c" type="range" min="15000" max="80000" step="5000" value="40000"></label>
+      <label>Contactos que agendan valoración <output id="o-v"></output><input id="v" type="range" min="10" max="50" step="5" value="25"></label>
+      <label>Valoraciones que se vuelven clientes <output id="o-k"></output><input id="k" type="range" min="15" max="70" step="5" value="35"></label>
+    </div>
+    <div class="res">
+      <div><span>Contactos al mes</span><strong id="r1"></strong></div>
+      <div><span>Valoraciones</span><strong id="r2"></strong></div>
+      <div><span>Clientes nuevos</span><strong id="r3"></strong></div>
+      <div><span>Costo por cliente</span><strong id="r4"></strong></div>
+      <small>Calculado con un ingreso promedio de $1.400.000 al mes por cliente presencial: <span id="r5"></span></small>
+    </div>
+  </div>
+</div></section>
+
+<section id="necesito"><div class="wrap">
+  <h2>Lo que necesitamos de Julián</h2>
+  <ul>
+    <li>15 a 20 fotos y 3 videos reales, en alta. Sin esto, el sitio no sale.</li>
+    <li>Título, universidad y estudios exactos, y su papel en la Selección Colombia.</li>
+    <li>Nombres de atletas y testimonios con autorización escrita.</li>
+    <li>WhatsApp comercial, zona donde vive, horarios y cupo máximo semanal.</li>
+    <li>Quién cobra: persona natural, RUT y cuenta para la pasarela.</li>
+    <li>Precios actuales y número de clientes que atiende hoy.</li>
+    <li>Revisión técnica del simulador de forehand en la landing.</li>
+  </ul>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p>Fuentes consultadas:</p>
+  <ul>
+    <li><a href="https://www.mercadopago.com.co/herramientas-para-vender/suscripciones">Mercado Pago Colombia, Suscripciones</a></li>
+    <li><a href="https://docs.wompi.co/docs/en/fuentes-de-pago">Wompi, Fuentes de pago y tokenización</a></li>
+    <li><a href="https://wordpress.org/plugins/?p=115707">Reseñas del plugin de Wompi en WordPress.org</a></li>
+    <li><a href="https://www.doctoralia.co/clinicas/medicina-del-deporte/chia">Doctoralia, medicina del deporte en Chía</a></li>
+    <li><a href="https://agendapro.com/site/co/motuspointherapy/456451">Motus Point Therapy</a></li>
+    <li><a href="https://www.wikipedia.com/wiki/Medellin_Revolution">Revolution (ultimate)</a> · <a href="https://ultiworld.com/2019/04/17/time-tep-get-excited-colombian-mega-tournament/">Ultiworld, TEP</a></li>
+  </ul>
+  <p style="margin-top:14px">Estrategia de <a href="https://www.werock.space">www.werock.space</a></p>
+</div></footer>
+
+<script>
+const $=id=>document.getElementById(id),cop=n=>'$'+Math.round(n).toLocaleString('es-CO');
+function calc(){
+  const p=+$('p').value,c=+$('c').value,v=+$('v').value/100,k=+$('k').value/100;
+  $('o-p').textContent=cop(p);$('o-c').textContent=cop(c);$('o-v').textContent=$('v').value+'%';$('o-k').textContent=$('k').value+'%';
+  const l=p/c,val=l*v,cl=val*k;
+  $('r1').textContent=Math.round(l);$('r2').textContent=Math.round(val);$('r3').textContent=cl.toFixed(1).replace('.',',');
+  $('r4').textContent=cl?cop(p/cl):'—';
+  $('r5').textContent=cop(cl*1400000)+' de ingreso mensual nuevo.';
+}
+['p','c','v','k'].forEach(i=>$(i).addEventListener('input',calc));calc();
+</script>
+</body>
+</html>
