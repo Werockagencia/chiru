@@ -25,5 +25,10 @@
 - Simulador de TACTO: Chiru debe revisar términos y curvas. Se dibujó como aproximación.
 - "Cúrate del dolor" en la bio de Instagram: recomendamos cambiarlo.
 
+## Marca
+- C1 ya tenía sello negro y oro en Instagram. Se redibujó en vector y el sitio pasó a esa paleta. Falta comparar con el archivo original.
+- La recomendación de retirar el escudo con la figura musculosa debe aprobarla Julián.
+- Precios de la propuesta web ($5.400.000) definidos por We Rock como referencia, por validar con David.
+
 ## Fotos
 Todas pendientes. Los marcos del sitio y la landing indican qué foto va en cada lugar.
